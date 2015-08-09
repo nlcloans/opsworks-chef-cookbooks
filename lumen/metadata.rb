@@ -1,0 +1,6 @@
+name              "lumen"
+maintainer        "Ryan Solida"
+maintainer_email  "ryan@mozay.com"
+license           "MIT"
+description       "Sets up necessary steps for running an lumen application"
+version           "1.0.0"
