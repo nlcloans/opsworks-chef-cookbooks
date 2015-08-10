@@ -6,5 +6,9 @@ node[:deploy].each do |application, deploy|
     code <<-EOH
     chmod -R 777 storage
     EOH
+
+    code <<-EOH
+    chmod -R 777 public/docs
+    EOH
   end
 end
