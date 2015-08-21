@@ -10,7 +10,7 @@ node[:deploy].each do |application, deploy|
 
     EOH
 
-    log 'message' do
+    Chef::Log 'message' do
       message 'PERMISSIONS DONE!'
       level :info
     end
