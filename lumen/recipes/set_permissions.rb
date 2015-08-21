@@ -7,13 +7,7 @@ node[:deploy].each do |application, deploy|
     touch storage/logs/lumen.log
     chmod -R 777 ./storage
     chmod -R 777 ./public/docs
-
     EOH
-
-    Chef::Log 'message' do
-      message 'PERMISSIONS DONE!'
-      level :info
-    end
 
   end
 end
