@@ -22,6 +22,8 @@ node[:deploy].each do |application, deploy|
     interpreter "bash"
     user "root"
     code <<-EOH
+    supervisorctl stop queue:
+    supervisorctl remove queue
     supervisorctl reread
     supervisorctl add queue
     EOH
