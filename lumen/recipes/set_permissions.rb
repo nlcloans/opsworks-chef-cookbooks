@@ -7,6 +7,7 @@ node[:deploy].each do |application, deploy|
     touch storage/logs/lumen.log
     chmod -R 777 ./storage
     chmod -R 777 ./public/docs
+    touch .env
     EOH
 
   end
