@@ -1,0 +1,8 @@
+[program:queue]
+process_name=%(program_name)s_%(process_num)02d
+command=php /srv/www/docusign_transfer/current/artisan queue:listen --sleep=3 --timeout=300 --tries=3
+autostart=true
+autorestart=true
+user=deploy
+redirect_stderr=true
+stdout_logfile=/srv/www/docusign_transfer/current/storage/logs/supervisor.log
