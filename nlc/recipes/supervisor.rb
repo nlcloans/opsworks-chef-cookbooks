@@ -22,6 +22,7 @@ node[:deploy].each do |application, deploy|
     interpreter "bash"
     user "root"
     code <<-EOH
+    supervisorctl reread
     supervisorctl add queue
     EOH
   end
