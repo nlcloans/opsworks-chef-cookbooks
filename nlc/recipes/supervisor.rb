@@ -6,7 +6,7 @@ node[:deploy].each do |application, deploy|
     user "root"
     cwd "#{deploy[:deploy_to]}/current"
     code <<-EOH
-    apt-get install supervisor
+    apt-get -y install supervisor
     EOH
   end
 
