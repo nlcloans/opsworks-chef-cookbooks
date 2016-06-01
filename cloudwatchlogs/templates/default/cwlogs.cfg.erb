@@ -29,6 +29,6 @@ state_file = /var/awslogs/state/agent-state
 [<%= node[:opsworks][:stack][:name] %>]
 datetime_format = [%Y-%m-%d %H:%M:%S]
 log_group_name = <%= node[:opsworks][:stack][:name].gsub(' ', '_') %>
-file = <%= @deploy_loc %>/current/storage/logs/*.log
+file = <%= @deploy_loc %>/current/storage/logs/lumen.log
 log_stream_name = lumen-log-<%= node[:opsworks][:instance][:ip] %>
 multi_line_start_pattern={datetime_format}
