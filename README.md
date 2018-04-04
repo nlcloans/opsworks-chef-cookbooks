@@ -1,3 +1,6 @@
+# THIS IS AN NON UPDATED CLONE FROM https://github.com/Mozay-LLC/opsworks-chef-cookbooks
+
+
 # AWS OpstWorks PHP Cookbooks. 
 > #NOTE
 >
